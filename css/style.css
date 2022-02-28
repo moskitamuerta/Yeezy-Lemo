@@ -61,6 +61,10 @@ body {
     width: 330px;
     border-radius: 15px;
 }
+.gradient {
+    height: 1080px;
+    background-image: linear-gradient(#bfb69b,#bfa09b );
+}
 
 .boxModel {
     background-color: #759e9a;
@@ -68,5 +72,16 @@ body {
     height: 150px;
     overflow: hidden;
     margin-left: 150px;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
-
+ 
+@keyframes move {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
